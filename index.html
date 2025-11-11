@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Copik</title>
+    <link rel="stylesheet" href="pick.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Copik</title>
-  <link rel="stylesheet" href="pick.css">
-</head>
+  <body>
+    <h1>What Color?</h1>
 
-<body>
-  <h1> What Color?</h1>
-  <div>
-    <input id="color" oninput="getColor()" type="color" name="color">
-    <p id="result1">HEX color pick</p>
-    <p id="result2">RGB color pick</p>
-    <p id="result3">HLA color pick</p>
-  </div>
-</body>
+    <div id="mainer">
+      <input id="color" oninput="getColor()" type="color" name="color" />
+      <div id="resultsContainer">
+        <p id="result1">HEX color pick</p>
+        <p id="result2">RGB color pick</p>
+        <p id="result3">HLA color pick</p>
+      </div>
+    </div>
+  </body>
 
-<script src="pick.js" defer="true"></script>
-
+  <script src="pick.js" defer></script>
 </html>
